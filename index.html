@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Organist : Organist deployment framework" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Organist</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/organist">View on GitHub</a>
+
+          <h1 id="project_title">Organist</h1>
+          <h2 id="project_tagline">Organist deployment framework</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Organist is an open source tool which helps you manage and execute deployments. It's built on top of <a href="http://www.symfony.com">Symfony2</a> and <a href="http://capistranorb.com/">Capistrano</a>/<a href="http://capifony.org/">Capifony</a>.</p>
+
+<p><a href="https://travis-ci.org/organist/organist"><img src="https://travis-ci.org/organist/organist.png?branch=master" alt="Build Status"></a></p>
+
+<p>[ <a href="https://github.com/todo" class="user-mention">@todo</a>, Screenshots ]</p>
+
+<h2>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h2>
+
+<ul>
+<li>Easy to use, everyone can deploy by just hitting a button</li>
+<li>Overview over your DTAP, see which version is deployed on which server</li>
+<li>Centralized security, credentials are injected during deployment (no more passwords in your VCS)</li>
+<li>It logs all of your deployments, so you can see who deployed what and when</li>
+<li>Flexible to extend. Use it with your own type of applications and parameters</li>
+</ul><h2>
+<a name="proven-technology" class="anchor" href="#proven-technology"><span class="octicon octicon-link"></span></a>Proven technology</h2>
+
+<p>Built on top of:</p>
+
+<ul>
+<li>
+<a href="http://www.symfony.com">Symfony2</a>, which is a proven to be a solid foundation for many apps</li>
+<li>
+<a href="http://capistranorb.com/">Capistrano</a> / <a href="http://capifony.org/">Capifony</a>, deployments are delegated to these excellent gems</li>
+<li>
+<a href="http://anyterm.org/">Anyterm</a>, which will give you an interactive console during deployment in your browser</li>
+<li>
+<a href="http://getbootstrap.com/">Twitter Bootstrap</a>, you can initiate deployments from your mobile ;-)</li>
+</ul><h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>For most users the <a href="https://github.com/organist/packer">organist/packer</a> repository is the place to start with Organist.</p>
+
+<h2>
+<a name="huh-why-start-there" class="anchor" href="#huh-why-start-there"><span class="octicon octicon-link"></span></a>Huh? Why start there?</h2>
+
+<p>There are 3 repositories in the organist namespace. There is "Organist" which is the actual Symfony2 application. And there is packer and puppet which will help you build an Organist box. These last two repositories are written to give you a quick start. Packer will download a fresh CentOS ISO, does a kickstart setup and runs the Puppet scripts to build up the entire stack that is needed to run Organist.</p>
+
+<p>Organist is highly dependant on other software layers and settings, which is why these layers and settings are poured into <a href="http://puppetlabs.com/">Puppet</a> scripts. And it is why these are run from <a href="http://www.packer.io">Packer</a> to prevent  what might be in a custom basebox made be me or someone else. </p>
+
+<h2>
+<a name="data-model" class="anchor" href="#data-model"><span class="octicon octicon-link"></span></a>Data model</h2>
+
+<p>This is a little scheme, which explains the data model that is being administered in organist.</p>
+
+<pre><code>              application --&lt; userfile
+                  |
+                  ^
+environment --&lt;  target  --&lt; log
+</code></pre>
+
+<ul>
+<li>Application, which you want to deploy</li>
+<li>Userfile(s), are the shared files and/or directories which needs to be shared between deployments</li>
+<li>Environment, the hosting environment you want to deploy to</li>
+<li>Target, combination of application and environment including accountname, db credentials, etc</li>
+<li>Log, which stores the result of the deployment</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
