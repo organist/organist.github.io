@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Organist : Organist deployment framework" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap-theme.min.css">
 
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="javascripts/bootstrap.min.js"></script>
     <title>Organist</title>
   </head>
 
@@ -34,7 +38,77 @@
           <h2>
               <a name="key-advantages" class="anchor" href="#key-advantages"><span class="octicon octicon-link"></span></a>First impression</h2>
 
-          <embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F107410762184339333255%2Falbumid%2F5974288811622289953%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <img src="images/1-Dashboard.png" alt="Dashboard">
+                      <div class="carousel-caption ">
+                          <h3 class="text-primary">Dashboard</h3>
+                          <p class="text-primary">See all your recent projects on dashboard</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/2-Addapplication.png" alt="Add application">
+                      <div class="carousel-caption">
+                            <h3 class="text-primary">Add application</h3>
+                          <p class="text-primary">Easily add an existing application from a Git repository</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/3-Settings.png" alt="Change settings">
+                      <div class="carousel-caption">
+                          <h3 class="text-primary">Application settings</h3>
+                          <p class="text-primary">Customized application type settings can be changed</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/4-Application%20dashboard.png" alt="Dashboard">
+                      <div class="carousel-caption">
+                          <h3 class="text-primary">Application dashboard</h3>
+                          <p class="text-primary">Each application has its own dashboard</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/5-Targets.png" alt="Adding deployment target">
+                      <div class="carousel-caption">
+                          <h3 class="text-primary">Add a deployment target</h3>
+                          <p class="text-primary">Add a deployment target for your app with specific parameters</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <img src="images/Commandpage.png" alt="Command page">
+                      <div class="carousel-caption">
+                          <h3 class="text-primary">Command page</h3>
+                          <p class="text-primary">Deployment, rollback, custom actions can be executed from this control panel</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/6-deploy.png" alt="Add application">
+                      <div class="carousel-caption">
+                          <h3 class="text-primary">Deployment</h3>
+                          <p class="text-primary">A deployment in action with interactive console</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+
           <br><br>
 <h2>
 <a name="key-advantages" class="anchor" href="#key-advantages"><span class="octicon octicon-link"></span></a>Key advantages</h2>

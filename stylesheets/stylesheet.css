@@ -365,8 +365,9 @@ Full-Width Styles
 #footer_wrap {
   background: #212121;
 }
-
-
+.text-primary {
+    color: #428bca;
+}
 
 /*******************************************************************************
 Small Device Styles
